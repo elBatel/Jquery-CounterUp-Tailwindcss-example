@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+    <title>Animate Counter Up</title>
+</head>
+
+<body>
+    <div class="h-screen bg-indigo-500 block">
+
+    </div>
+    <div class="h-screen bg-blue-500 block">
+
+    </div>
+
+    <div id="counter" class="counter h-screen flex justify-between items-center">
+        <div class="count border border-gray-600 border-4 w-1/3 py-10 mx-8 text-center rounded-full">100</div>
+        <div class="count border border-gray-600 border-4 w-1/3 py-10 mx-8 text-center rounded-full">500</div>
+        <div class="count border border-gray-600 border-4 w-1/3 py-10 mx-8 text-center rounded-full">400</div>
+    </div>
+
+    <div class="h-screen bg-blue-500 block">
+
+    </div>
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="jquery.counterup.min.js"></script>
+    <script>
+
+        jQuery(document).ready(function ($) {
+            $('.count').counterUp({
+                delay: 10,
+                time: 1000
+            });
+        });
+    </script>
+</body>
+
+</html>
